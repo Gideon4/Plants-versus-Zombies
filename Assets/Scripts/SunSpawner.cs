@@ -6,13 +6,10 @@ public class SunSpawner : MonoBehaviour
 {
     public GameObject prefab;
 
-    void Start()
-    {
+    void start(){
         InvokeRepeating("spawn",10,10);
     }
-
     void spawn(){
         Instantiate(prefab,transform.position,Quaternion.identity);
     }
-
 }

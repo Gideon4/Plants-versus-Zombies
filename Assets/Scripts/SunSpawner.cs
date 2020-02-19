@@ -6,7 +6,7 @@ public class SunSpawner : MonoBehaviour
 {
     public GameObject prefab;
 
-    void start(){
+    void Start(){
         InvokeRepeating("spawn",10,10);
     }
     void spawn(){

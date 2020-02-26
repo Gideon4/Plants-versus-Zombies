@@ -14,7 +14,7 @@ public class BulletShooter : MonoBehaviour
 
     void shoot(){
         if(zombieinfront()){
-            GetComponent<Animator>().SetTrigger("isfiring");
+            GetComponent<Animator>().SetTrigger("Isfiring");
             Instantiate(bulletprefab,transform.position,Quaternion.identity);
         }
     }
